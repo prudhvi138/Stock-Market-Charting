@@ -1,0 +1,28 @@
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>StockExchange</th>
+        <th>Brief</th>
+        <th>Address</th>
+        <th>Remarks</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let exchange of exchanges">
+        <td>{{exchange.id}}</td>
+        <td>{{exchange.stock}}</td>
+        <td>{{exchange.brief}}</td>
+        <td>{{exchange.address}}</td>
+        <td>{{exchange.remarks}}</td>
+        <td><button class="btn btn-danger" (click)="deleteStockExchange(exchange.id)">Delete</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" (click)="updateStockExchange(exchange)">Update</button></td>
+    </tr>
+  </table>
+ 
+  <section id="intro"  >
+    <div class="intro-c ">
+        <div class= "text-center"> 
+            <a routerLink="/stock-exchange" class="btn-get-started scrollto">Stock Exchange</a>
+            <a routerLink="/admin-land" class="btn-get-startedd scrollto  ">Back</a>
+       </div>
+    </div>
+  </section>

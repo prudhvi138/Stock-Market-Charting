@@ -1,0 +1,17 @@
+ <section id="intro">
+    <div class="container">
+      
+        <h2 class="mt-5">Import Data</h2>
+        <div class="card bg-light w-50 vh-75 mt-5" >
+          <div class="card-body mt-5">
+            <form [formGroup]="uploadForm" (ngSubmit)="upload()">
+        <div class="form-group">
+          <label for="upload excel file">Upload Excel File</label>
+          <input type="file" class="form-control" (change)="onFileChange($event)" id="excel" formControlName="excel" placeholder="Enter Excel File" name="excel">
+          </div>
+       <button type="submit" class="btn btn-info">Upload</button>
+      </form>
+        </div>  
+      </div>
+    </div>
+  </section> 

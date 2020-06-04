@@ -1,0 +1,37 @@
+
+<section>
+    <div class="container">
+  
+      <div class="card bg-light w-50 h-100 mt-5 ">
+        <div class="card-body">
+          <h2> Ipo Of Company</h2>
+          <form [formGroup]="updateForm" (ngSubmit)="UpdateStockExchange()">
+            <div class="form-group">
+              <label for="Stock">Stock Exchange</label>
+              <input type="text" class="form-control" id="stock" formControlName="stock"
+                placeholder="Enter Stock Exchange" name="stock">
+            </div>
+            <div class="form-group">
+                <label for="remarks">Brief </label>
+                <textarea class="form-control" id="brief" formControlName="brief" placeholder="Brief Information about Stock Exchange"
+                  rows="2" name="boc"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="address">Contact Address</label>
+                <textarea class="form-control" id="address" formControlName="address" placeholder="Enter Contact Address"
+                  rows="2" name="address"></textarea>
+              </div>
+            
+         
+            <div class="form-group">
+              <label for="remarks">Remakrs</label>
+              <textarea class="form-control" id="remarks" formControlName="remarks" placeholder="Remarks If any"
+                rows="2" name="remarks"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Update</button> 
+  
+          </form>
+        </div>
+      </div>
+    </div>
+</section>

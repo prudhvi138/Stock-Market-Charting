@@ -1,0 +1,28 @@
+
+<table class="table  table-responsive">
+    <tr>
+        <th>Company name</th>
+        <th>Listed in Stock Exchange</th>
+        <th>Price per Share</th>
+        <th>Total number of Shares</th>
+        <th>Open Date</th>
+        <th>Remarks</th>
+    </tr>
+    <tr *ngFor="let ipo of ipos">
+        <td>{{ipo.companyname}}</td>
+        <td>{{ipo.lse}}</td>
+        <td>{{ipo.pps}}</td>
+        <td>{{ipo.tnos}}</td>
+        <td>{{ipo.odate}}</td>
+        <td>{{ipo.remarks}}</td>
+    </tr>
+</table>
+<section id="intro"  >
+    <div class="intro-c ">
+        <div class="text-center">
+            <a routerLink="/user-land" class="btn-get-startedd scrollto  ">Back</a>
+         </div>
+    </div>
+  </section>
+
+

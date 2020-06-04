@@ -1,0 +1,41 @@
+
+<table class="table  table-responsive">
+    <tr>
+        <th>Company name</th>
+        <th>Turnover</th>
+        <th>CEO</th>
+        <th>Board of Directors</th>
+        <th>Listed in Stock Exchange</th>
+        <th>Sector</th>
+        <th>About Company</th>
+        <th>Stock Code</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let company of companies">
+        <td>{{company.companyname}}</td>
+        <td>{{company.turnover}}</td>
+        <td>{{company.ceo}}</td>
+        <td>{{company.bod}}</td>
+        <td>{{company.lse}}</td>
+        <td>{{company.sector}}</td>
+        <td>{{company.boc}}</td>
+        <td>{{company.stock}}</td>
+        <td>
+            <button class="btn btn-danger" (click)="deleteCompany(company.id)">Delete</button>&nbsp;&nbsp;
+        <button class="btn btn-warning" (click)="updateCompany(company)">Update</button></td>
+       
+    </tr>
+</table>
+
+<section id="intro"  >
+    <div class="intro-c ">
+        <div class="text-center">
+      <a routerLink="/company" class="btn-get-started scrollto">Create Company</a>
+      <a routerLink="/admin-land" class="btn-get-startedd scrollto  ">Back</a>
+       </div>
+    </div>
+  </section>
+ 
+  
+
+

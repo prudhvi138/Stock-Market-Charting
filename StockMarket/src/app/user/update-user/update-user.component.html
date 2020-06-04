@@ -1,0 +1,37 @@
+<section id="intro" class=adminbg>
+    <div class="container">
+
+      <div class="card bg-light w-50 h-100 mt-5 " >
+        <div class="card-body">
+          <h2>Update User</h2>
+    <form [formGroup]="updateUserForm" (ngSubmit)="updateUser()">
+        <div class="form-group">
+            <label for="name">Id:</label>
+            <input type="text" class="form-control" id="id" disabled formControlName="name"  placeholder="Enter Name" name="name">
+          </div>
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" formControlName="name"  placeholder="Enter Name" name="name">
+        </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" formControlName="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" formControlName="password" placeholder="Enter password" name="password">
+      </div>
+      <div class="form-group">
+          <label for="cpassword">Confirm Password:</label>
+          <input type="password" class="form-control" id="cpassword" formControlName="cpassword" placeholder="Renter password" name="cpassword">
+        </div>
+      <button type="submit"  class="btn btn-success" >Update User</button>
+      
+    </form>
+      </div>  
+    </div>
+  </div>
+  
+</section>
+
+

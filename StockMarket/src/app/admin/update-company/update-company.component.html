@@ -1,0 +1,57 @@
+<section>
+    <div class="container">
+  
+      <div class="card bg-light w-50 h-100 mt-5 ">
+        <div class="card-body">
+          <h2>Create a new company</h2>
+          <form [formGroup]="updatecompanyForm" (ngSubmit)="updateCompany()">
+            <div class="form-group">
+              <label for="companyname">Company Name:</label>
+              <input type="text" class="form-control" id="companyname" formControlName="companyname"
+                placeholder="Enter Company Name" name="companyname">
+            </div>
+            <div class="form-group">
+              <label for="turnover">Turnover:</label>
+              <input type="number" class="form-control" id="turnover" formControlName="turnover"
+                placeholder="Enter Turnover" name="turnover">
+            </div>
+            <div class="form-group">
+              <label for="ceo">CEO:</label>
+              <input type="text" class="form-control" id="ceo" formControlName="ceo" placeholder="Enter CEO Name"
+                name="ceo">
+            </div>
+            <div class="form-group">
+              <label for="bod">Board Of Directors:</label>
+              <input type="text" class="form-control" id="bod" formControlName="bod"
+                placeholder="Enter Board Of Directors" name="bod">
+            </div>
+            <div class="form-group">
+              <label for="lse">Listed In Stock Exchange</label>
+              <select multiple class="form-control" id="lse" formControlName="lse" name="lse">
+                <option>BSE</option>
+                <option>NSE</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sector">Sector:</label>
+              <input type="text" class="form-control" id="sector" formControlName="sector" placeholder="Enter Sector"
+                name="sector">
+            </div>
+            <div class="form-group">
+              <label for="boc">Brief writeup about the company : </label>
+              <textarea class="form-control" id="boc" formControlName="boc" placeholder="Brief writeup about the company"
+                rows="3" name="boc"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="stockcode">Stock Code:</label>
+              <input type="text" class="form-control" id="stock" formControlName="stock" placeholder="Enter Stock Code"
+                name="stock">
+            </div>
+            <button type="submit"  class="btn btn-info">Update Company</button>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </section>

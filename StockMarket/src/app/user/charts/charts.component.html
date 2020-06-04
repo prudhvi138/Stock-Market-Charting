@@ -1,0 +1,17 @@
+
+   
+
+<section id="intro"  >
+   <div class="intro-c ">
+       <div class="text-center">
+    <div *ngIf="getFirstDataComplete && getSecondDataComplete"
+         class="row justify-content-center mt-5">
+         <highcharts-chart [Highcharts]="chartOne" [options]="chartOneOptions">
+         </highcharts-chart>
+      
+      
+         <a routerLink="/user-land" class="btn-get-startedd scrollto  ">Back</a>
+</div>
+ </div>
+   </div>
+ </section>
